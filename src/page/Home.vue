@@ -45,7 +45,9 @@
             />
           </p>
         </div>
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 sm:w-full">
+        <div
+          class="lg:max-w-lg mb-5 md:mb-0 lg:w-full md:w-1/2 w-5/6 sm:w-full"
+        >
           <img
             class="object-cover object-center rounded"
             alt="hero"

@@ -2,9 +2,18 @@
   <footer class="text-white body-font footer">
     <div class="relative">
       <div
-        class="container px-12 py-8 mx-auto flex items-center justify-between"
+        class="
+          container
+          px-12
+          py-8
+          mx-auto
+          flex
+          items-center
+          md:flex-row
+          flex-col flex-col-reverse
+        "
       >
-        <p class="text-sm text-white">
+        <p class="text-sm text-white md:my-0 my-5">
           © 2020 Naufal Alfadhil —
           <a
             href="https://twitter.com/knyttneve"
