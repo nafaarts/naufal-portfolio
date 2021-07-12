@@ -49,7 +49,7 @@
           <img
             class="object-cover object-center rounded"
             alt="hero"
-            src="hero.gif"
+            src="../assets/hero.gif"
           />
         </div>
       </div>
