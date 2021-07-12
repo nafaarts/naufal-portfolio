@@ -1,9 +1,19 @@
 <template>
-  <div class="h-screen flex items-center justify-center">
+  <Navbar />
+  <div class="h-50 flex items-center justify-center">
     <h1 class="text-white text-4xl">CONTACT</h1>
   </div>
+  <Footer />
 </template>
 
 <script>
-export default {};
+import Navbar from "../components/Navbar.vue";
+import Footer from "../components/Footer.vue";
+
+export default {
+  components: {
+    Navbar,
+    Footer,
+  },
+};
 </script>

@@ -1,7 +1,7 @@
 <template>
   <Navbar />
   <div class="h-50 flex items-center justify-center">
-    <h1 class="text-white text-4xl">ABOUT</h1>
+    <h1 class="text-white text-4xl">EXPERIENCE</h1>
   </div>
   <Footer />
 </template>

@@ -22,83 +22,120 @@
         "
       >
         <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-          <div
-            class="
-              w-20
-              h-20
-              inline-flex
-              items-center
-              justify-center
-              rounded-full
-              bg-opacity-25 bg-cream
-              duration-200
-              hover:bg-opacity-75
-              text-cream
-              mb-5
-              flex-shrink-0
-            "
-          >
-            <img src="../assets/bx_bxs-user.png" alt="" class="h-10 w-10" />
-          </div>
-          <div class="flex-grow">
-            <h2 class="text-white text-lg title-font font-medium mb-3">
-              About
-            </h2>
-          </div>
+          <router-link to="/">
+            <div
+              class="
+                w-20
+                h-20
+                inline-flex
+                items-center
+                justify-center
+                rounded-full
+                bg-opacity-25 bg-cream
+                duration-200
+                hover:bg-opacity-75
+                text-cream
+                mb-5
+                flex-shrink-0
+              "
+            >
+              <img src="../assets/logo-n.png" alt="" class="h-10 w-10" />
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-white text-lg title-font font-medium mb-3">
+                Home
+              </h2>
+            </div>
+          </router-link>
         </div>
         <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-          <div
-            class="
-              w-20
-              h-20
-              inline-flex
-              items-center
-              justify-center
-              rounded-full
-              bg-opacity-25 bg-cream
-              duration-200
-              hover:bg-opacity-75
-              text-cream
-              mb-5
-              flex-shrink-0
-            "
-          >
-            <img src="../assets/ic_outline-work.png" alt="" class="h-10 w-10" />
-          </div>
-          <div class="flex-grow">
-            <h2 class="text-white text-lg title-font font-medium mb-3">
-              Experience
-            </h2>
-          </div>
+          <router-link to="/about">
+            <div
+              class="
+                w-20
+                h-20
+                inline-flex
+                items-center
+                justify-center
+                rounded-full
+                bg-opacity-25 bg-cream
+                duration-200
+                hover:bg-opacity-75
+                text-cream
+                mb-5
+                flex-shrink-0
+              "
+            >
+              <img src="../assets/bx_bxs-user.png" alt="" class="h-10 w-10" />
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-white text-lg title-font font-medium mb-3">
+                About
+              </h2>
+            </div>
+          </router-link>
         </div>
         <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
-          <div
-            class="
-              w-20
-              h-20
-              inline-flex
-              items-center
-              justify-center
-              rounded-full
-              bg-opacity-25 bg-cream
-              duration-200
-              hover:bg-opacity-75
-              text-cream
-              mb-5
-              flex-shrink-0
-            "
-          >
-            <img
-              src="../assets/ic_sharp-connect-without-contact.png"
-              alt=""
-              class="h-10 w-10"
-            />
-          </div>
-          <div class="flex-grow">
-            <h2 class="text-white text-lg title-font font-medium mb-3">
-              Contact
-            </h2>
-          </div>
+          <router-link to="/experience">
+            <div
+              class="
+                w-20
+                h-20
+                inline-flex
+                items-center
+                justify-center
+                rounded-full
+                bg-opacity-25 bg-cream
+                duration-200
+                hover:bg-opacity-75
+                text-cream
+                mb-5
+                flex-shrink-0
+              "
+            >
+              <img
+                src="../assets/ic_outline-work.png"
+                alt=""
+                class="h-10 w-10"
+              />
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-white text-lg title-font font-medium mb-3">
+                Experience
+              </h2>
+            </div>
+          </router-link>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <router-link to="/contact">
+            <div
+              class="
+                w-20
+                h-20
+                inline-flex
+                items-center
+                justify-center
+                rounded-full
+                bg-opacity-25 bg-cream
+                duration-200
+                hover:bg-opacity-75
+                text-cream
+                mb-5
+                flex-shrink-0
+              "
+            >
+              <img
+                src="../assets/ic_sharp-connect-without-contact.png"
+                alt=""
+                class="h-10 w-10"
+              />
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-white text-lg title-font font-medium mb-3">
+                Contact
+              </h2>
+            </div>
+          </router-link>
         </div>
       </div>
     </div>
