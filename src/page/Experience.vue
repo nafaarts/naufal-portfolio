@@ -16,4 +16,4 @@ export default {
     Footer,
   },
 };
-</script>
+</script> 

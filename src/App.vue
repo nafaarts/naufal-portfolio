@@ -1,9 +1,5 @@
 <template>
-  <div class="bg-grey-dark h-screen overflow-hidden px-5 md:px-12">
-    <div class="context">
-      <router-view></router-view>
-      <!-- <Home /> -->
-    </div>
+  <div class="bg-grey-dark overflow-hidden px-5 md:px-12">
     <div class="area">
       <ul class="circles">
         <li></li>
@@ -17,6 +13,10 @@
         <li></li>
         <li></li>
       </ul>
+    </div>
+    <div class="context">
+      <router-view></router-view>
+      <!-- <Home /> -->
     </div>
   </div>
 </template>
@@ -38,12 +38,16 @@ export default {
 }
 
 .context {
-  width: 100%;
+  position: relative;
+  /* width: 100%; */
+  /* z-index: 999; */
 }
 
 .area {
+  top: 0;
   width: 100%;
   height: 100vh;
+  position: fixed;
 }
 
 .circles {

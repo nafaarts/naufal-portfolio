@@ -21,7 +21,7 @@ const routes = [
     name: "Contact",
     component: () => import("../page/Contact.vue"),
   },
-];
+]; 
 const router = createRouter({
   history: createWebHistory(),
   routes,

@@ -149,6 +149,13 @@ export default {
       isMenuActive: false,
     };
   },
+  created() {
+    window.addEventListener("keydown", (e) => {
+      if (e.key == "Escape") {
+        this.isMenuActive = !this.isMenuActive;
+      }
+    });
+  },
   methods: {
     toggle: function (event) {
       this.isMenuActive = !this.isMenuActive;
@@ -204,7 +211,7 @@ export default {
 }
 
 .menu-list {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   height: 0;
