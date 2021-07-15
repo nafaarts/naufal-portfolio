@@ -137,7 +137,7 @@
       </ul>
     </div>
   </section>
-  <Footer is-fixed />
+  <Footer />
 </template>
 
 <script>
