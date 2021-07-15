@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-white body-font footer">
+  <footer class="text-white body-font footer" :class="{ isFixed: isFixed }">
     <div class="relative">
       <div
         class="
@@ -14,14 +14,16 @@
         "
       >
         <p class="text-sm text-white md:my-0 my-5">
-          © 2020 Naufal Alfadhil —
+          Copyright ©
+          <!-- <span class="md:inline hidden"> - </span> -->
           <a
-            href="https://twitter.com/knyttneve"
-            class="text-white ml-1"
+            href="https://www.instagram.com/nfalldh"
+            class="text-white"
             rel="noopener noreferrer"
             target="_blank"
-            >@nfalldh</a
+            >nfalldh</a
           >
+          2021
         </p>
         <span
           class="
@@ -101,13 +103,25 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      isFixed: this.isFixed,
+    };
+  },
+  props: {
+    isFixed: Boolean,
+  },
+};
 </script>
 
 <style>
 .footer {
-  position: absolute;
   width: 100%;
+}
+
+.isFixed {
+  position: absolute;
   bottom: 5px;
   left: 0px;
 }

@@ -56,7 +56,8 @@
         </div>
       </div>
     </section>
-    <Footer />
+    <!-- <Footer /> -->
+    <Footer is-fixed />
   </div>
 </template>
 

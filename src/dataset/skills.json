@@ -1,0 +1,38 @@
+{
+  "programmingLanguage":[
+    {"link":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png", "name":"PHP"},
+    {"link":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png", "name":"Javascript"},
+    {"link":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/120px-Python-logo-notext.svg.png", "name":"python"},
+    {"link":"https://upload.wikimedia.org/wikipedia/id/thumb/2/2e/Java_Logo.svg/100px-Java_Logo.svg.png", "name":"java"},
+    {"link":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dart-logo.png/600px-Dart-logo.png", "name":"dart"},
+    {"link":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png", "name":"html5"},
+    {"link":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png", "name":"css3"}
+  ],
+  "frameworks":[
+    {"link": "https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg", "name": "bootstrap"},
+    {"link": "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg", "name": "tailwind"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/laravel-2.svg"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/codeigniter.svg", "name": "codeigniter"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/react-2.svg", "name": "react js"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/svelte-1.svg", "name": "svelte js"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/vue-js-1.svg", "name": "vue js"},
+      {"link": "https://nodejs.org/static/images/logos/nodejs-new-pantone-black.svg", "name": "node js"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/flutter.svg", "name": "flutter js"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/express-109.svg", "name": "express js", "class": "filter invert"}
+  ], 
+  "videoMusic":[
+      {"link": "https://cdn.worldvectorlogo.com/logos/after-effects-2019.svg", "name": "After Effects"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/premiere-cc.svg", "name": "Premiere Pro"},
+      {"link": "https://logos-download.com/wp-content/uploads/2017/01/Audition_logo_Adobe_Audition_CC-1-700x682.png", "name": "Audition"},
+      {"link": "https://www.image-line.com/wp-content/themes/intracto/build/images/fl-header-logo.png", "name": "FL Studio"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/obs-2.svg", "name": "OBS Studio"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/blender-2.svg", "name": "Blender"}
+  ],
+  "design":[
+      {"link": "https://cdn.worldvectorlogo.com/logos/figma-1.svg", "name": "Figma"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/adobe-illustrator-cc-2019.svg", "name": "Illustrator"},
+      {"link": "https://cdn.worldvectorlogo.com/logos/photoshop-cc-4.svg", "name": "Photoshop"}
+  ]
+}
+
+
