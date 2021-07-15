@@ -121,7 +121,7 @@ export default {
 }
 
 .isFixed {
-  position: absolute;
+  position: fixed;
   bottom: 5px;
   left: 0px;
 }
