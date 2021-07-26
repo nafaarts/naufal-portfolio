@@ -15,6 +15,7 @@
       </ul>
     </div>
     <div class="context">
+      <!-- <button @click="klik()">klik</button> -->
       <router-view></router-view>
       <!-- <Home /> -->
     </div>
@@ -28,6 +29,23 @@ export default {
   components: {
     // Home,
   },
+  // methods: {
+  //   klik() {
+  //     fetch("http://localhost:5000/contact", {
+  //       method: "POST",
+  //       body: JSON.stringify({
+  //         name: "foo",
+  //         email: "email@gmali.com",
+  //         message: "yoo this is message",
+  //       }),
+  //       headers: {
+  //         "Content-type": "application/json; charset=UTF-8",
+  //       },
+  //     })
+  //       .then((response) => response.json())
+  //       .then((json) => console.log(json));
+  //   },
+  // },
 };
 </script>
 
