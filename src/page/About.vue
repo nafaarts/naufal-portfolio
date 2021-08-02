@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <section class="flex md:flex-row flex-col">
+  <section class="flex md:flex-row flex-col container">
     <div class="flex items-center justify-center md:w-2/5">
       <img src="../assets/about-image.png" alt="" class="md:h-4/5" />
     </div>
@@ -25,7 +25,7 @@
       </router-link>
     </div>
   </section>
-  <section class="mt-10 md:p-10">
+  <section class="mt-10 md:p-10 container">
     <h1 class="text-cream text-3xl md:text-left text-center mb-5">
       WHAT CAN I DO?
     </h1>
@@ -57,7 +57,7 @@
       </div>
     </div>
   </section>
-  <section class="mt-10 md:p-10">
+  <section class="mt-10 md:p-10 container">
     <h1 class="text-cream text-3xl mb-5 md:text-left text-center">
       TOOLS THAT I USE
     </h1>
@@ -114,7 +114,7 @@
       </div>
     </div>
   </section>
-  <section class="mt-10 md:p-10">
+  <section class="mt-10 md:p-10 container">
     <h1 class="text-cream text-3xl mb-5 md:text-left text-center">EDUCATION</h1>
     <hr class="border-cream mb-5" />
     <div class="flex flex-col text-white">

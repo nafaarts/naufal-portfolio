@@ -1,17 +1,14 @@
 <template>
   <Navbar />
-  <!-- <div class="h-50 flex items-center justify-center">
-    <h1 class="text-white text-4xl">CONTACT</h1>
-  </div> -->
-  <section class="text-gray-600 body-font relative">
-    <div class="container px-5 mx-auto">
+  <section class="text-gray-600 body-font container flex h-5/6">
+    <div class="container px-5 mx-auto items-center">
       <div class="flex flex-col text-center w-full mb-2">
         <h1 class="text-3xl font-medium title-font mb-4 text-cream">
           CONTACT ME
         </h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-white">
+        <small class="lg:w-2/3 mx-auto leading-relaxed text-white">
           would be very happy to be your partner
-        </p>
+        </small>
       </div>
       <div class="lg:w-1/2 md:w-2/3 mx-auto text-white">
         <form @submit.prevent="sendMe()">
@@ -33,7 +30,6 @@
                     w-full
                     bg-gray-100 bg-opacity-50
                     rounded
-                    border border-gray-300
                     focus:border-indigo-500
                     focus:bg-white
                     focus:ring-2 focus:ring-indigo-200
@@ -114,7 +110,6 @@
                     text-grey-dark
                     bg-gray-100 bg-opacity-50
                     rounded
-                    border border-gray-300
                     focus:border-indigo-500
                     focus:bg-white
                     focus:ring-2 focus:ring-indigo-200
@@ -186,7 +181,7 @@
       </div>
     </div>
   </section>
-  <Footer />
+  <Footer :isFixed="true" />
 </template>
 
 <script>
@@ -196,6 +191,8 @@ import Footer from "../components/Footer.vue";
 import vueRecaptcha from "vue3-recaptcha2";
 import useVuelidate from "@vuelidate/core";
 import { required, email, minLength, helpers } from "@vuelidate/validators";
+import Swal from "sweetalert2";
+import "sweetalert2/src/sweetalert2.scss";
 
 export default {
   setup() {
@@ -257,18 +254,40 @@ export default {
   },
   methods: {
     sendMe() {
-      this.v$.$validate();
-      if (!this.v$.$error) {
-        this.postData("https://api.nafaarts.com/contact", {
-          captcha: this.state.recaptcha,
-          name: this.state.name,
-          email: this.state.email,
-          message: this.state.message,
-        }).then((data) => {
-          alert(data.msg);
-          // router.push("Home");
-        });
-      }
+      // this.v$.$validate();
+      // if (!this.v$.$error) {
+      //   this.postData("https://api.nafaarts.com/contact", {
+      //     captcha: this.state.recaptcha,
+      //     name: this.state.name,
+      //     email: this.state.email,
+      //     message: this.state.message,
+      //   }).then((data) => {
+      //     alert(data.msg);
+      //     setInterval(() => {
+      //       window.location = "/";
+      //     }, 3000);
+      //   });
+      // }
+      Swal.fire({
+        title: "Are you sure?",
+        text: "You will not be able to recover this imaginary file!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes, delete it!",
+        cancelButtonText: "No, keep it",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            "Deleted!",
+            "Your imaginary file has been deleted.",
+            "success"
+          );
+          // For more information about handling dismissals please visit
+          // https://sweetalert2.github.io/#handling-dismissals
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+          Swal.fire("Cancelled", "Your imaginary file is safe :)", "error");
+        }
+      });
     },
     recaptchaVerified(response) {
       this.state.recaptcha = response;

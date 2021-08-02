@@ -2,6 +2,9 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    container: {
+      center: true,
+    },
     fontFamily: {
       display: ["Poppins", "system-ui", "sans-serif"],
       body: ["Poppins", "system-ui", "sans-serif"],

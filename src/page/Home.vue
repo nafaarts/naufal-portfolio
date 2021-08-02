@@ -1,7 +1,7 @@
 <template>
   <div class="container h-screen mx-auto">
     <Navbar />
-    <section class="body-font">
+    <section class="body-font container flex h-4/6">
       <div class="mx-auto flex md:flex-row flex-col-reverse items-center">
         <div
           class="
