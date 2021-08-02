@@ -271,14 +271,19 @@ export default {
               message: this.state.message,
             });
           },
-          // willClose: () => {
-          //   clearInterval(timerInterval);
-          // },
         }).then((result) => {
           if (result.dismiss === Swal.DismissReason.timer) {
             Swal.fire({
+              icon: "success",
               title: `Thankyouu :)`,
               html: "I'll be reply you soon!",
+              confirmButtonColor: "#E9B783",
+              confirmButtonText: "Okey",
+            }).then((result) => {
+              if (result.isConfirmed) {
+                router.push("/");
+                console.log("redirect...");
+              }
             });
           }
         });
