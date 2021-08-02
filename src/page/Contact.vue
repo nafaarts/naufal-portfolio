@@ -171,6 +171,7 @@
                   rounded
                   text-lg
                 "
+                @click="sendMe()"
                 type="submit"
               >
                 Send me
@@ -181,7 +182,7 @@
       </div>
     </div>
   </section>
-  <Footer :isFixed="true" />
+  <Footer />
 </template>
 
 <script>
@@ -254,40 +255,34 @@ export default {
   },
   methods: {
     sendMe() {
-      // this.v$.$validate();
-      // if (!this.v$.$error) {
-      //   this.postData("https://api.nafaarts.com/contact", {
-      //     captcha: this.state.recaptcha,
-      //     name: this.state.name,
-      //     email: this.state.email,
-      //     message: this.state.message,
-      //   }).then((data) => {
-      //     alert(data.msg);
-      //     setInterval(() => {
-      //       window.location = "/";
-      //     }, 3000);
-      //   });
-      // }
-      Swal.fire({
-        title: "Are you sure?",
-        text: "You will not be able to recover this imaginary file!",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonText: "Yes, delete it!",
-        cancelButtonText: "No, keep it",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
-            "Deleted!",
-            "Your imaginary file has been deleted.",
-            "success"
-          );
-          // For more information about handling dismissals please visit
-          // https://sweetalert2.github.io/#handling-dismissals
-        } else if (result.dismiss === Swal.DismissReason.cancel) {
-          Swal.fire("Cancelled", "Your imaginary file is safe :)", "error");
-        }
-      });
+      this.v$.$validate();
+      if (!this.v$.$error) {
+        Swal.fire({
+          title: "Please wait!",
+          html: "Sending your message..",
+          timer: 2000,
+          timerProgressBar: true,
+          didOpen: () => {
+            Swal.showLoading();
+            this.postData("https://api.nafaarts.com/contact", {
+              captcha: this.state.recaptcha,
+              name: this.state.name,
+              email: this.state.email,
+              message: this.state.message,
+            });
+          },
+          // willClose: () => {
+          //   clearInterval(timerInterval);
+          // },
+        }).then((result) => {
+          if (result.dismiss === Swal.DismissReason.timer) {
+            Swal.fire({
+              title: `Thankyouu :)`,
+              html: "I'll be reply you soon!",
+            });
+          }
+        });
+      }
     },
     recaptchaVerified(response) {
       this.state.recaptcha = response;
