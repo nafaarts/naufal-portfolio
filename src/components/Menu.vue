@@ -40,12 +40,15 @@
               class="
                 md:w-20
                 md:h-20
+                w-14
+                h-14
                 inline-flex
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-25
-                md:bg-cream
+                bg-opacity-50
+                dark:bg-opacity-25
+                bg-cream
                 duration-200
                 hover:bg-opacity-75
                 text-cream
@@ -54,7 +57,11 @@
                 flex-shrink-0
               "
             >
-              <img src="../assets/logo-n.png" alt="" class="h-10 w-10" />
+              <img
+                src="../assets/logo-n.png"
+                alt=""
+                class="md:h-10 md:w-10 h-7"
+              />
             </div>
             <div>
               <h2
@@ -90,12 +97,15 @@
               class="
                 md:w-20
                 md:h-20
+                w-14
+                h-14
                 inline-flex
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-25
-                md:bg-cream
+                bg-opacity-50
+                dark:bg-opacity-25
+                bg-cream
                 duration-200
                 hover:bg-opacity-75
                 text-cream
@@ -140,12 +150,15 @@
               class="
                 md:w-20
                 md:h-20
+                w-14
+                h-14
                 inline-flex
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-25
-                md:bg-cream
+                bg-opacity-50
+                dark:bg-opacity-25
+                bg-cream
                 duration-200
                 hover:bg-opacity-75
                 text-cream
@@ -194,12 +207,15 @@
               class="
                 md:w-20
                 md:h-20
+                w-14
+                h-14
                 inline-flex
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-25
-                md:bg-cream
+                bg-opacity-50
+                dark:bg-opacity-25
+                bg-cream
                 duration-200
                 hover:bg-opacity-75
                 text-cream
