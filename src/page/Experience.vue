@@ -5,7 +5,7 @@
   </div>
 
   <section class="text-gray-600 body-font overflow-hidden">
-    <div class="container px-5 md:px-40 py-24 mx-auto">
+    <div class="container px-5 md:px-40 py-16 mx-auto">
       <div class="-my-8 divide-y-2 divide-gray-100 text-white">
         <div
           v-for="experience in experiences.experience"

@@ -21,75 +21,132 @@
           rounded-lg
         "
       >
-        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div
+          class="
+            md:p-4
+            md:w-1/3
+            h-1/4
+            flex
+            md:flex-col
+            flex-wrap
+            text-center
+            content-center
+          "
+        >
           <router-link to="/">
             <div
               class="
-                w-20
-                h-20
+                md:w-20
+                md:h-20
                 inline-flex
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-25 bg-cream
+                bg-opacity-25
+                md:bg-cream
                 duration-200
                 hover:bg-opacity-75
                 text-cream
-                mb-5
+                md:mb-5
+                mb-3
                 flex-shrink-0
               "
             >
               <img src="../assets/logo-n.png" alt="" class="h-10 w-10" />
             </div>
-            <div class="flex-grow">
-              <h2 class="text-white text-lg title-font font-medium mb-3">
+            <div>
+              <h2
+                class="
+                  text-white text-lg
+                  title-font
+                  text-sm
+                  md:text-base
+                  md:font-medium
+                  md:mb-3
+                "
+              >
                 Home
               </h2>
             </div>
           </router-link>
         </div>
-        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div
+          class="
+            md:p-4
+            md:w-1/3
+            h-1/4
+            flex
+            md:flex-col
+            flex-wrap
+            text-center
+            content-center
+          "
+        >
           <router-link to="/about">
             <div
               class="
-                w-20
-                h-20
+                md:w-20
+                md:h-20
                 inline-flex
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-25 bg-cream
+                bg-opacity-25
+                md:bg-cream
                 duration-200
                 hover:bg-opacity-75
                 text-cream
-                mb-5
+                md:mb-5
+                mb-3
                 flex-shrink-0
               "
             >
               <img src="../assets/bx_bxs-user.png" alt="" class="h-10 w-10" />
             </div>
             <div class="flex-grow">
-              <h2 class="text-white text-lg title-font font-medium mb-3">
+              <h2
+                class="
+                  text-white text-lg
+                  title-font
+                  text-sm
+                  md:text-base
+                  md:font-medium
+                  mb-3
+                "
+              >
                 About
               </h2>
             </div>
           </router-link>
         </div>
-        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div
+          class="
+            md:p-4
+            md:w-1/3
+            h-1/4
+            flex
+            md:flex-col
+            flex-wrap
+            text-center
+            content-center
+          "
+        >
           <router-link to="/experience">
             <div
               class="
-                w-20
-                h-20
+                md:w-20
+                md:h-20
                 inline-flex
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-25 bg-cream
+                bg-opacity-25
+                md:bg-cream
                 duration-200
                 hover:bg-opacity-75
                 text-cream
-                mb-5
+                md:mb-5
+                mb-3
                 flex-shrink-0
               "
             >
@@ -100,27 +157,49 @@
               />
             </div>
             <div class="flex-grow">
-              <h2 class="text-white text-lg title-font font-medium mb-3">
+              <h2
+                class="
+                  text-white text-lg
+                  title-font
+                  text-base text-sm
+                  md:
+                  md:font-medium
+                  mb-3
+                "
+              >
                 Experience
               </h2>
             </div>
           </router-link>
         </div>
-        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div
+          class="
+            md:p-4
+            md:w-1/3
+            h-1/4
+            flex
+            md:flex-col
+            flex-wrap
+            text-center
+            content-center
+          "
+        >
           <router-link to="/contact">
             <div
               class="
-                w-20
-                h-20
+                md:w-20
+                md:h-20
                 inline-flex
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-25 bg-cream
+                bg-opacity-25
+                md:bg-cream
                 duration-200
                 hover:bg-opacity-75
                 text-cream
-                mb-5
+                md:mb-5
+                mb-3
                 flex-shrink-0
               "
             >
@@ -131,7 +210,16 @@
               />
             </div>
             <div class="flex-grow">
-              <h2 class="text-white text-lg title-font font-medium mb-3">
+              <h2
+                class="
+                  text-white text-lg
+                  title-font
+                  text-base text-sm
+                  md:
+                  md:font-medium
+                  mb-3
+                "
+              >
                 Contact
               </h2>
             </div>

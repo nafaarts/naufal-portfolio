@@ -4,20 +4,20 @@
     <div class="flex items-center justify-center md:w-2/5">
       <img src="../assets/about-image.png" alt="" class="md:h-4/5" />
     </div>
-    <div class="md:p-10 mt-5 md:w-3/5 text-justify md:text-left">
+    <div class="md:p-10 mt-5 md:w-3/5 text-justify">
       <h4 class="text-cream text-4xl md:text-left text-center mb-5">
         ABOUT ME
       </h4>
       <hr class="border-cream" />
       <p class="text-white my-5 text-lg">
-        At currently 17 years old, i have had the pleasure to turn my passion
-        for mobile and web engineering into a job. I believe in learning through
-        practically and gained experiences in web development early on my
-        teenage years. i am creative open-minded developer.
+        &emsp; At currently 17 years old, i have had the pleasure to turn my
+        passion for mobile and web engineering into a job. I believe in learning
+        through practically and gained experiences in web development early on
+        my teenage years. i am creative open-minded developer.
       </p>
       <p class="text-white text-lg">
-        I start a small company called "Nafaarts" beside my freelance job. with
-        all my experiences i hope i can make Nafaarts bigger hehe.
+        &emsp;I start a small company called "Nafaarts" beside my freelance job.
+        with all my experiences i hope i can make Nafaarts bigger hehe.
       </p>
       <br />
       <router-link class="text-cream hover:text-orange" to="/experience"

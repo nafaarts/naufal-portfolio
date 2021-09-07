@@ -1,5 +1,8 @@
 <template>
-  <footer class="text-white body-font footer" :class="{ isFixed: isFixed }">
+  <footer
+    class="text-white body-font footer"
+    :class="{ 'md:isFixed': isFixed }"
+  >
     <div class="relative">
       <div
         class="
@@ -35,21 +38,7 @@
             sm:justify-start
           "
         >
-          <a class="text-white">
-            <svg
-              fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
-              ></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-white">
+          <a class="ml-3 text-white" href="https://twitter.com/nfalldh_">
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -63,7 +52,7 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-white">
+          <a class="ml-3 text-white" href="https://www.instagram.com/nfalldh">
             <svg
               fill="none"
               stroke="currentColor"
@@ -79,7 +68,10 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-white">
+          <a
+            class="ml-3 text-white"
+            href="https://www.linkedin.com/in/muhammad-naufal-alfadhil-62b784219/"
+          >
             <svg
               fill="currentColor"
               stroke="currentColor"
