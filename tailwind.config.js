@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     container: {
       center: true,
@@ -15,6 +15,7 @@ module.exports = {
       },
       white: {
         DEFAULT: "#ffffff",
+        soft: "#FBFAF5",
       },
       orange: {
         DEFAULT: "#FFA500",

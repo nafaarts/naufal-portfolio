@@ -1,51 +1,80 @@
 <template>
-  <div class="bg-grey-dark overflow-hidden px-5 md:px-12">
-    <div class="area">
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+  <main :class="{ dark: dark }">
+    <div
+      class="bg-white-soft dark:bg-grey-dark overflow-hidden px-5 md:px-12"
+      @click="klik"
+    >
+      <div class="area">
+        <ul class="circles">
+          <li class="dark:bg-white bg-cream opacity-25"></li>
+          <li class="dark:bg-white bg-cream opacity-25"></li>
+          <li class="dark:bg-white bg-cream opacity-25"></li>
+          <li class="dark:bg-white bg-cream opacity-25"></li>
+          <li class="dark:bg-white bg-cream opacity-25"></li>
+          <li class="dark:bg-white bg-cream opacity-25"></li>
+          <li class="dark:bg-white bg-cream opacity-25"></li>
+          <li class="dark:bg-white bg-cream opacity-25"></li>
+          <li class="dark:bg-white bg-cream opacity-25"></li>
+          <li class="dark:bg-white bg-cream opacity-25"></li>
+        </ul>
+      </div>
+      <div class="context">
+        <!-- <button @click="klik()">klik</button> -->
+        <router-view></router-view>
+        <!-- <Home /> -->
+      </div>
     </div>
-    <div class="context">
-      <!-- <button @click="klik()">klik</button> -->
-      <router-view></router-view>
-      <!-- <Home /> -->
-    </div>
-  </div>
+  </main>
 </template>
 
 <script>
 import "./tailwind.css";
 
 export default {
-  components: {
-    // Home,
+  data() {
+    return {
+      delay: 700,
+      clicks: 0,
+      timer: null,
+      dark: false,
+    };
   },
-  // methods: {
-  //   klik() {
-  //     fetch("http://localhost:5000/contact", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         name: "foo",
-  //         email: "email@gmali.com",
-  //         message: "yoo this is message",
-  //       }),
-  //       headers: {
-  //         "Content-type": "application/json; charset=UTF-8",
-  //       },
-  //     })
-  //       .then((response) => response.json())
-  //       .then((json) => console.log(json));
-  //   },
-  // },
+  mounted() {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      this.dark = true;
+    } else {
+      this.dark = false;
+    }
+  },
+  created() {
+    window.addEventListener("keydown", (e) => {
+      if (e.key == "F2") {
+        this.dark = !this.dark;
+        localStorage.theme = this.dark ? "dark" : "light";
+      }
+    });
+  },
+  methods: {
+    klik(event) {
+      this.clicks++;
+      if (this.clicks <= 2) {
+        this.timer = setTimeout(() => {
+          this.clicks = 0;
+        }, this.delay);
+      } else {
+        clearTimeout(this.timer);
+        console.log("Triple Clicks");
+        this.dark = !this.dark;
+        localStorage.theme = this.dark ? "dark" : "light";
+
+        this.clicks = 0;
+      }
+    },
+  },
 };
 </script>
 
@@ -83,7 +112,6 @@ export default {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(255, 255, 255, 0.2);
   animation: animate 25s linear infinite;
   bottom: -150px;
 }

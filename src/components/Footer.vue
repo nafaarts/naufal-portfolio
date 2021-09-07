@@ -7,21 +7,22 @@
       <div
         class="
           container
-          px-12
           py-8
           mx-auto
           flex
           items-center
+          justify-between
+          flex-wrap
           md:flex-row
           flex-col flex-col-reverse
         "
       >
-        <p class="text-sm text-white md:my-0 my-5">
+        <p class="text-sm dark:text-white text-grey-dark md:my-0 my-5">
           Copyright ©
           <!-- <span class="md:inline hidden"> - </span> -->
           <a
             href="https://www.instagram.com/nfalldh"
-            class="text-white"
+            class="dark:text-white"
             rel="noopener noreferrer"
             target="_blank"
             >nfalldh</a
@@ -38,7 +39,10 @@
             sm:justify-start
           "
         >
-          <a class="ml-3 text-white" href="https://twitter.com/nfalldh_">
+          <a
+            class="ml-3 dark:text-white text-grey-dark"
+            href="https://twitter.com/nfalldh_"
+          >
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -52,7 +56,10 @@
               ></path>
             </svg>
           </a>
-          <a class="ml-3 text-white" href="https://www.instagram.com/nfalldh">
+          <a
+            class="ml-3 dark:text-white text-grey-dark"
+            href="https://www.instagram.com/nfalldh"
+          >
             <svg
               fill="none"
               stroke="currentColor"
@@ -69,7 +76,7 @@
             </svg>
           </a>
           <a
-            class="ml-3 text-white"
+            class="ml-3 dark:text-white text-grey-dark"
             href="https://www.linkedin.com/in/muhammad-naufal-alfadhil-62b784219/"
           >
             <svg

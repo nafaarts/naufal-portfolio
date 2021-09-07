@@ -9,13 +9,13 @@
         ABOUT ME
       </h4>
       <hr class="border-cream" />
-      <p class="text-white my-5 text-lg">
+      <p class="dark:text-white text-grey-dark my-5 text-lg">
         &emsp; At currently 17 years old, i have had the pleasure to turn my
         passion for mobile and web engineering into a job. I believe in learning
         through practically and gained experiences in web development early on
         my teenage years. i am creative open-minded developer.
       </p>
-      <p class="text-white text-lg">
+      <p class="dark:text-white text-grey-dark text-lg">
         &emsp;I start a small company called "Nafaarts" beside my freelance job.
         with all my experiences i hope i can make Nafaarts bigger hehe.
       </p>
@@ -35,7 +35,7 @@
         <div class="w-24 h-24 m-auto my-8">
           <img src="../assets/fa-solid_code.png" alt="" />
         </div>
-        <h1 class="text-white text-2xl text-center mb-7">
+        <h1 class="dark:text-white text-grey-dark text-2xl text-center mb-7">
           WEB<br />DEVELOPMENT
         </h1>
       </div>
@@ -43,7 +43,7 @@
         <div class="w-24 h-24 m-auto my-8">
           <img src="../assets/akar-icons_mobile-device.png" alt="" />
         </div>
-        <h1 class="text-white text-2xl text-center mb-7">
+        <h1 class="dark:text-white text-grey-dark text-2xl text-center mb-7">
           MOBILE<br />DEVELOPMENT
         </h1>
       </div>
@@ -51,7 +51,7 @@
         <div class="w-24 h-24 m-auto my-8">
           <img src="../assets/bx_bx-video.png" alt="" />
         </div>
-        <h1 class="text-white text-2xl text-center mb-7">
+        <h1 class="dark:text-white text-grey-dark text-2xl text-center mb-7">
           VIDEO / MUSIC<br />EDITS
         </h1>
       </div>
@@ -62,7 +62,7 @@
       TOOLS THAT I USE
     </h1>
     <hr class="border-cream mb-5" />
-    <div class="flex flex-col text-white">
+    <div class="flex flex-col text-grey-dark dark:text-white">
       <div id="programming" class="mb-5">
         <h6 class="md:text-left text-center">PROGRAMMING LANGUAGE</h6>
         <div class="flex flex-wrap">
@@ -117,7 +117,7 @@
   <section class="mt-10 md:p-10 container">
     <h1 class="text-cream text-3xl mb-5 md:text-left text-center">EDUCATION</h1>
     <hr class="border-cream mb-5" />
-    <div class="flex flex-col text-white">
+    <div class="flex flex-col dark:text-white text-grey-dark">
       <ul>
         <li
           class="

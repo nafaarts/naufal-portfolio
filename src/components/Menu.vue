@@ -1,9 +1,9 @@
 <template>
   <div class="menu-wrap" :class="{ active: isMenuActive }">
     <div id="toggle" @click="toggle">
-      <div class="bar bar1 bg-white"></div>
-      <div class="bar bar2 bg-white"></div>
-      <div class="bar bar3 bg-white"></div>
+      <div class="bar bar1 bg-grey-dark dark:bg-white"></div>
+      <div class="bar bar2 bg-grey-dark dark:bg-white"></div>
+      <div class="bar bar3 bg-grey-dark dark:bg-white"></div>
     </div>
 
     <div class="menu-list overflow-hidden">
@@ -16,8 +16,10 @@
           flex-col
           items-center
           justify-center
-          bg-grey-dark bg-opacity-95
-          border-white border-t-4
+          dark:bg-grey-dark
+          bg-white bg-opacity-95
+          dark:border-white
+          border-cream border-t-4
           rounded-lg
         "
       >
@@ -57,7 +59,8 @@
             <div>
               <h2
                 class="
-                  text-white text-lg
+                  dark:text-white
+                  text-lg
                   title-font
                   text-sm
                   md:text-base
@@ -106,7 +109,8 @@
             <div class="flex-grow">
               <h2
                 class="
-                  text-white text-lg
+                  dark:text-white
+                  text-lg
                   title-font
                   text-sm
                   md:text-base
@@ -159,7 +163,8 @@
             <div class="flex-grow">
               <h2
                 class="
-                  text-white text-lg
+                  dark:text-white
+                  text-lg
                   title-font
                   text-base text-sm
                   md:
@@ -212,7 +217,8 @@
             <div class="flex-grow">
               <h2
                 class="
-                  text-white text-lg
+                  dark:text-white
+                  text-lg
                   title-font
                   text-base text-sm
                   md:

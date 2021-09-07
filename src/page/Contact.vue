@@ -1,12 +1,22 @@
 <template>
   <Navbar />
-  <section class="text-gray-600 body-font container flex h-5/6">
+  <section
+    class="dark:text-white text-grey-dark body-font container flex h-5/6"
+  >
     <div class="container px-5 mx-auto items-center">
       <div class="flex flex-col text-center w-full mb-2">
         <h1 class="text-3xl font-medium title-font mb-4 text-cream">
           CONTACT ME
         </h1>
-        <small class="lg:w-2/3 mx-auto leading-relaxed text-white">
+        <small
+          class="
+            lg:w-2/3
+            mx-auto
+            leading-relaxed
+            text-grey-dark
+            dark:text-white
+          "
+        >
           would be very happy to be your partner
         </small>
       </div>
@@ -15,7 +25,9 @@
           <div class="flex flex-wrap m-2">
             <div class="p-2 md:w-1/2 w-full">
               <div class="relative">
-                <label for="name" class="leading-7 text-sm text-gray-600"
+                <label
+                  for="name"
+                  class="leading-7 text-sm dark:text-white text-grey-dark"
                   >Name</label
                 >
                 <input
@@ -28,6 +40,7 @@
                   class="
                     text-grey-dark
                     w-full
+                    border border-cream
                     bg-gray-100 bg-opacity-50
                     rounded
                     focus:border-indigo-500
@@ -55,7 +68,9 @@
             </div>
             <div class="p-2 md:w-1/2 w-full">
               <div class="relative">
-                <label for="email" class="leading-7 text-sm text-gray-600"
+                <label
+                  for="email"
+                  class="leading-7 text-sm dark:text-white text-grey-dark"
                   >Email</label
                 >
                 <input
@@ -71,7 +86,7 @@
                     text-grey-dark
                     bg-gray-100 bg-opacity-50
                     rounded
-                    border border-gray-300
+                    border
                     focus:border-indigo-500
                     focus:bg-white
                     focus:ring-2 focus:ring-indigo-200
@@ -97,7 +112,9 @@
             </div>
             <div class="p-2 w-full">
               <div class="relative">
-                <label for="message" class="leading-7 text-sm text-gray-600"
+                <label
+                  for="message"
+                  class="leading-7 text-sm dark:text-white text-grey-dark"
                   >Message</label
                 >
                 <textarea
@@ -107,6 +124,7 @@
                   :class="{ error: v$.message.$errors.length }"
                   class="
                     w-full
+                    border border-cream
                     text-grey-dark
                     bg-gray-100 bg-opacity-50
                     rounded
@@ -140,7 +158,7 @@
                 v-if="showRecaptcha"
                 siteKey="6LeBk7UbAAAAAPNbY8DBRouehIEr18dK9CC8cbRi"
                 size="normal"
-                theme="dark"
+                theme="{{localStorage.theme}}"
                 :tabindex="0"
                 @verify="recaptchaVerified"
                 @expire="recaptchaExpired"
@@ -196,6 +214,9 @@ import Swal from "sweetalert2";
 import "sweetalert2/src/sweetalert2.scss";
 
 export default {
+  mounted() {
+    console.log(localStorage.theme);
+  },
   setup() {
     const state = reactive({
       name: "",
