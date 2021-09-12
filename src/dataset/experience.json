@@ -6,7 +6,8 @@
         {"place": "Website Bursa Kerja Khusus SMK Negeri 2 Banda Aceh", "position": "Freelancer", "description": "Membuat website BKK Sebagai aplikasi untuk para alumni smk mencari kerja ", "image": "/experience/bkk.png","year": "2019"},
         {"place": "PPDB Provinsi Aceh", "position": "Freelancer", "description": "Membuat aplikasi penerimaan peserta didik baru untuk seluruh SMK/SMA dan SLB seluruh Provinsi Aceh yang di selenggarakan oleh Dinas Pendidikan Aceh", "image": "/experience/ppdb-aceh.png","year": "2019"},
         {"place": "Argumented Reality Job Fair BKK SMK Negeri 2 Banda Aceh", "position": "Freelancer", "description": "Aplikasi job matching Bursa Kerja Khusus SMK Negeri 2 Banda Aceh", "image": "/experience/bkk.png","year": "2020"},
-        {"place": "Panti Asuhan LKSA Muhammadiah Banda Aceh", "position": "Volunteer", "description": "Sistem informasi panti asuhan berbasis wordpress", "image": "/experience/muhammadiyah.png","year": "2021"}
+        {"place": "Panti Asuhan LKSA Muhammadiah Banda Aceh", "position": "Volunteer", "description": "Sistem informasi panti asuhan berbasis wordpress", "image": "/experience/muhammadiyah.png","year": "2021"},
+        {"place": "PT Trans Continent", "position": "Internship", "description": "-", "image": "/experience/muhammadiyah.png","year": "2021 - present"}
     ]
 }
 
