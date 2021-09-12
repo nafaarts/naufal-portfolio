@@ -10,10 +10,12 @@
       </h4>
       <hr class="border-cream" />
       <p class="dark:text-white text-grey-dark my-5 text-lg">
-        &emsp; At currently 17 years old, i have had the pleasure to turn my
-        passion for mobile and web engineering into a job. I believe in learning
-        through practically and gained experiences in web development early on
-        my teenage years. i am creative open-minded developer.
+        &emsp; Hi! You can call me
+        <strong> Naufal (Naufal Alfadhil) </strong> and I'm Indonesian 🇮🇩 :).
+        When i was 17 years old, i had the pleasure to turn my passion for
+        mobile and web engineering into a job. I believe in learning through
+        practical and gained experiences in web development early on my teenage
+        years. i am a creative open-minded developer.
       </p>
       <p class="dark:text-white text-grey-dark text-lg">
         &emsp;I start a small company called "Nafaarts" beside my freelance job.

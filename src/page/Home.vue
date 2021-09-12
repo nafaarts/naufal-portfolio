@@ -20,15 +20,7 @@
           "
         >
           <h1
-            class="
-              md:text-6xl
-              text-3xl
-              mb-4
-              font-light
-              dark:text-white
-              md:mt-0
-              mt-10
-            "
+            class="md:text-6xl text-3xl mb-4 font-light dark:text-white md:mt-0"
           >
             FULL-STACK <br />
             <span class="text-cream font-medium">WEB DEVELOPER</span>
@@ -36,7 +28,7 @@
             BY <span class="text-cream font-medium">NAUFAL</span>
           </h1>
           <div class="dark:bg-white bg-grey-dark h-1 w-40 mb-5"></div>
-          <p class="mb-8 text-sm dark:text-white tracking-wide">
+          <p class="text-sm dark:text-white tracking-wide">
             CODE WITH LOVE AND SANGER
             <font-awesome-icon
               class="pl-1 text-3xl text-cream"

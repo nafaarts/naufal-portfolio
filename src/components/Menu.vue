@@ -1,12 +1,12 @@
 <template>
   <div class="menu-wrap" :class="{ active: isMenuActive }">
-    <div id="toggle" @click="toggle">
+    <div class="toggleBtn" id="toggle" @click="toggle">
       <div class="bar bar1 bg-grey-dark dark:bg-white"></div>
       <div class="bar bar2 bg-grey-dark dark:bg-white"></div>
       <div class="bar bar3 bg-grey-dark dark:bg-white"></div>
     </div>
 
-    <div class="menu-list overflow-hidden">
+    <div class="menu-list shadow-2xl overflow-hidden">
       <div
         class="
           menus
@@ -17,7 +17,7 @@
           items-center
           justify-center
           dark:bg-grey-dark
-          bg-white bg-opacity-95
+          bg-white-soft
           dark:border-white
           border-cream border-t-4
           rounded-lg
@@ -46,11 +46,11 @@
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-50
+                bg-opacity-75
                 dark:bg-opacity-25
                 bg-cream
                 duration-200
-                hover:bg-opacity-75
+                hover:bg-opacity-100
                 text-cream
                 md:mb-5
                 mb-3
@@ -103,11 +103,11 @@
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-50
+                bg-opacity-75
                 dark:bg-opacity-25
                 bg-cream
                 duration-200
-                hover:bg-opacity-75
+                hover:bg-opacity-100
                 text-cream
                 md:mb-5
                 mb-3
@@ -156,11 +156,11 @@
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-50
+                bg-opacity-75
                 dark:bg-opacity-25
                 bg-cream
                 duration-200
-                hover:bg-opacity-75
+                hover:bg-opacity-100
                 text-cream
                 md:mb-5
                 mb-3
@@ -213,11 +213,11 @@
                 items-center
                 justify-center
                 rounded-full
-                bg-opacity-50
+                bg-opacity-75
                 dark:bg-opacity-25
                 bg-cream
                 duration-200
-                hover:bg-opacity-75
+                hover:bg-opacity-100
                 text-cream
                 md:mb-5
                 mb-3
@@ -257,6 +257,9 @@ export default {
   data() {
     return {
       isMenuActive: false,
+      delay: 700,
+      clicks: 0,
+      timer: null,
     };
   },
   created() {
@@ -265,6 +268,7 @@ export default {
         this.isMenuActive = !this.isMenuActive;
       }
     });
+    window.addEventListener("click", (e) => {});
   },
   methods: {
     toggle: function (event) {
@@ -324,6 +328,7 @@ export default {
   position: fixed;
   left: 0;
   bottom: 0;
+  justify-content: center;
   height: 0;
   width: 100%;
   transition: 1s;
@@ -331,12 +336,30 @@ export default {
 }
 
 .menus {
-  width: 80%;
+  width: 100%;
   height: 100%;
 }
 
 .active .menu-list {
-  height: 80vh;
+  height: 84vh;
   opacity: 1;
+  background-color: aquamarine;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-list {
+    width: 70%;
+    height: 100vh;
+    left: -80%;
+    opacity: 0;
+  }
+
+  .active .menu-list {
+    height: 100vh;
+    width: 70%;
+    left: 0;
+    opacity: 1;
+  }
 }
 </style>

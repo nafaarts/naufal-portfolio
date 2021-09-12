@@ -6,16 +6,16 @@
     >
       <div class="area">
         <ul class="circles">
-          <li class="dark:bg-white bg-cream opacity-25"></li>
-          <li class="dark:bg-white bg-cream opacity-25"></li>
-          <li class="dark:bg-white bg-cream opacity-25"></li>
-          <li class="dark:bg-white bg-cream opacity-25"></li>
-          <li class="dark:bg-white bg-cream opacity-25"></li>
-          <li class="dark:bg-white bg-cream opacity-25"></li>
-          <li class="dark:bg-white bg-cream opacity-25"></li>
-          <li class="dark:bg-white bg-cream opacity-25"></li>
-          <li class="dark:bg-white bg-cream opacity-25"></li>
-          <li class="dark:bg-white bg-cream opacity-25"></li>
+          <li class="dark:bg-white bg-cream"></li>
+          <li class="dark:bg-white bg-cream"></li>
+          <li class="dark:bg-white bg-cream"></li>
+          <li class="dark:bg-white bg-cream"></li>
+          <li class="dark:bg-white bg-cream"></li>
+          <li class="dark:bg-white bg-cream"></li>
+          <li class="dark:bg-white bg-cream"></li>
+          <li class="dark:bg-white bg-cream"></li>
+          <li class="dark:bg-white bg-cream"></li>
+          <li class="dark:bg-white bg-cream"></li>
         </ul>
       </div>
       <div class="context">
@@ -162,8 +162,8 @@ export default {
 
 .circles li:nth-child(7) {
   left: 35%;
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   animation-delay: 7s;
 }
 
@@ -185,8 +185,8 @@ export default {
 
 .circles li:nth-child(10) {
   left: 85%;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   animation-delay: 0s;
   animation-duration: 11s;
 }
@@ -194,14 +194,14 @@ export default {
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
-    opacity: 1;
-    border-radius: 0;
+    opacity: 0.5;
+    border-radius: 20%;
   }
 
   100% {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
-    border-radius: 50%;
+    border-radius: 100%;
   }
 }
 </style>

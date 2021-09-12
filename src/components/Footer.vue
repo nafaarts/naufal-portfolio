@@ -59,6 +59,7 @@
           <a
             class="ml-3 dark:text-white text-grey-dark"
             href="https://www.instagram.com/nfalldh"
+            target="_blank"
           >
             <svg
               fill="none"
@@ -77,7 +78,8 @@
           </a>
           <a
             class="ml-3 dark:text-white text-grey-dark"
-            href="https://www.linkedin.com/in/muhammad-naufal-alfadhil-62b784219/"
+            href="https://www.linkedin.com/in/nfalldh/"
+            target="_blank"
           >
             <svg
               fill="currentColor"
