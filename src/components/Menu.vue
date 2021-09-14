@@ -350,13 +350,13 @@ export default {
 @media only screen and (max-width: 600px) {
   .menu-list {
     width: 70%;
-    height: 92vh;
+    height: 100vh;
     left: -80%;
     opacity: 0;
   }
 
   .active .menu-list {
-    height: 92vh;
+    height: 100%;
     width: 70%;
     left: 0;
     opacity: 1;

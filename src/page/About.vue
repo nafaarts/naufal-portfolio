@@ -1,4 +1,5 @@
 <template>
+  <Loading />
   <Navbar />
   <section class="flex md:flex-row flex-col container">
     <div class="flex items-center justify-center md:w-2/5">
@@ -145,11 +146,15 @@
 <script>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
+import Loading from "../components/Loading.vue";
 
 import skill from "../dataset/skills.json";
 import educations from "../dataset/education.json";
 
 export default {
+  created() {
+    console.log("Created!");
+  },
   data() {
     return {
       skill,
@@ -159,6 +164,7 @@ export default {
   components: {
     Navbar,
     Footer,
+    Loading,
   },
 };
 </script>

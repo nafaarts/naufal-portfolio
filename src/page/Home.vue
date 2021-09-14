@@ -1,4 +1,5 @@
 <template>
+  <Loading />
   <div class="container md:h-screen mx-auto">
     <Navbar />
     <section class="body-font flex h-4/6">
@@ -60,11 +61,13 @@
 <script>
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
+import Loading from "../components/Loading.vue";
 
 export default {
   components: {
     Navbar,
     Footer,
+    Loading,
   },
 };
 </script>

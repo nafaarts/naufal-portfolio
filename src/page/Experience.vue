@@ -1,4 +1,5 @@
 <template>
+  <Loading />
   <Navbar />
   <div class="h-50 flex items-center justify-center">
     <h1 class="dark:text-white text-grey-dark text-4xl">EXPERIENCE</h1>
@@ -39,8 +40,12 @@
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
 import experiences from "../dataset/experience.json";
+import Loading from "../components/Loading.vue";
 
 export default {
+  created() {
+    console.log("Created!");
+  },
   data() {
     return {
       experiences,
@@ -49,6 +54,7 @@ export default {
   components: {
     Navbar,
     Footer,
+    Loading,
   },
 };
 </script> 

@@ -1,4 +1,5 @@
 <template>
+  <Loading />
   <Navbar />
   <section
     class="dark:text-white text-grey-dark body-font container flex h-5/6"
@@ -207,6 +208,8 @@
 import { reactive } from "vue";
 import Navbar from "../components/Navbar.vue";
 import Footer from "../components/Footer.vue";
+import Loading from "../components/Loading.vue";
+
 import vueRecaptcha from "vue3-recaptcha2";
 import useVuelidate from "@vuelidate/core";
 import { required, email, minLength, helpers } from "@vuelidate/validators";
@@ -214,8 +217,8 @@ import Swal from "sweetalert2";
 import "sweetalert2/src/sweetalert2.scss";
 
 export default {
-  mounted() {
-    console.log(localStorage.theme);
+  created() {
+    console.log("Created!");
   },
   setup() {
     const state = reactive({
@@ -268,6 +271,7 @@ export default {
     Navbar,
     Footer,
     vueRecaptcha,
+    Loading,
   },
   data() {
     return {
