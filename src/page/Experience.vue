@@ -11,7 +11,7 @@
         class="-my-8 divide-y-2 divide-gray-100 dark:text-white text-grey-dark"
       >
         <div
-          v-for="experience in experiences.experience"
+          v-for="experience in experiences.experience.slice().reverse()"
           :key="experience.place"
           class="py-16 flex flex-wrap md:flex-nowrap"
         >
