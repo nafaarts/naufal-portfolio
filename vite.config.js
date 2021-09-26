@@ -5,10 +5,8 @@ import { routes } from "./src/route";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  pluginOptions: {
-    sitemap: {
-      baseURL: "https://n.nafaarts.com",
-      routes,
-    },
+  sitemap: {
+    baseURL: "https://n.nafaarts.com",
+    routes,
   },
 });
