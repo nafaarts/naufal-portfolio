@@ -331,8 +331,9 @@ export default {
   justify-content: center;
   height: 0;
   width: 100%;
-  transition: 1s;
+  transition: 0.5s;
   opacity: 0;
+  animation-timing-function: linear;
 }
 
 .menus {
