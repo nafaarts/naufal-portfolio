@@ -6,7 +6,7 @@ on:
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: Deploy || LetsGO!!!
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
@@ -25,9 +25,9 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ftp.nafaarts.com
-          username: portfolio@nafaarts.com
-          password: portfolio2021
-          protocol: ftps
-          port: 21
-          server-dir: /test/
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ${{ secrets.FTP_PROTOCOL }}
+          port: ${{ secrets.FTP_PORT }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
