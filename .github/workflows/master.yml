@@ -28,4 +28,4 @@ jobs:
           server: ftp.nafaarts.com
           username: portfolio@nafaarts.com
           password: portfolio2021
-          server-dir: /test
+          server-dir: /test/
