@@ -5,7 +5,7 @@ import { faMugHot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import router from "./route";
 
-particlesJS.load("particles-js", "public/particles.json", function () {
+particlesJS.load("particles-js", "/particles.json", function () {
   console.log("callback - particles-js config loaded");
 });
 
