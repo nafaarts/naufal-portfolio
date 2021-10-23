@@ -1,5 +1,5 @@
 <template>
-  <!-- <Loading /> -->
+  <Loading />
   <div class="container md:h-screen mx-auto">
     <Navbar />
     <section class="body-font flex h-4/6">
