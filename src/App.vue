@@ -1,11 +1,16 @@
 <template>
   <main :class="{ dark: dark }">
     <div
-      class="bg-white-soft dark:bg-grey-dark overflow-hidden px-5 md:px-12"
+      class="bg-white-soft dark:bg-grey-dark fixed h-full w-full"
+      id="particles-js"
+    ></div>
+
+    <div
+      class="overflow-hidden px-5 absolute top-0 w-full md:px-12 z-0"
       @click="klik"
     >
-      <div class="area">
-        <!-- <ul class="circles">
+      <!-- <div class="area">
+        <ul class="circles">
           <li class="dark:bg-white bg-cream"></li>
           <li class="dark:bg-white bg-cream"></li>
           <li class="dark:bg-white bg-cream"></li>
@@ -16,8 +21,8 @@
           <li class="dark:bg-white bg-cream"></li>
           <li class="dark:bg-white bg-cream"></li>
           <li class="dark:bg-white bg-cream"></li>
-        </ul> -->
-      </div>
+        </ul>
+      </div> -->
       <div class="context">
         <!-- <button @click="klik()">klik</button> -->
         <router-view></router-view>
