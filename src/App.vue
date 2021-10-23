@@ -5,7 +5,7 @@
       @click="klik"
     >
       <div class="area">
-        <ul class="circles">
+        <!-- <ul class="circles">
           <li class="dark:bg-white bg-cream"></li>
           <li class="dark:bg-white bg-cream"></li>
           <li class="dark:bg-white bg-cream"></li>
@@ -16,7 +16,7 @@
           <li class="dark:bg-white bg-cream"></li>
           <li class="dark:bg-white bg-cream"></li>
           <li class="dark:bg-white bg-cream"></li>
-        </ul>
+        </ul> -->
       </div>
       <div class="context">
         <!-- <button @click="klik()">klik</button> -->
