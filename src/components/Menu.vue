@@ -25,8 +25,7 @@
       >
         <div
           class="
-            md:p-4
-            md:w-1/3
+            md:p-4 md:w-1/3
             h-1/4
             flex
             md:flex-col
@@ -38,8 +37,7 @@
           <router-link to="/">
             <div
               class="
-                md:w-20
-                md:h-20
+                md:w-20 md:h-20
                 w-14
                 h-14
                 inline-flex
@@ -70,9 +68,7 @@
                   text-lg
                   title-font
                   text-sm
-                  md:text-base
-                  md:font-medium
-                  md:mb-3
+                  md:text-base md:font-medium md:mb-3
                 "
               >
                 Home
@@ -82,8 +78,7 @@
         </div>
         <div
           class="
-            md:p-4
-            md:w-1/3
+            md:p-4 md:w-1/3
             h-1/4
             flex
             md:flex-col
@@ -95,8 +90,7 @@
           <router-link to="/about">
             <div
               class="
-                md:w-20
-                md:h-20
+                md:w-20 md:h-20
                 w-14
                 h-14
                 inline-flex
@@ -123,8 +117,7 @@
                   text-lg
                   title-font
                   text-sm
-                  md:text-base
-                  md:font-medium
+                  md:text-base md:font-medium
                   mb-3
                 "
               >
@@ -135,8 +128,7 @@
         </div>
         <div
           class="
-            md:p-4
-            md:w-1/3
+            md:p-4 md:w-1/3
             h-1/4
             flex
             md:flex-col
@@ -148,8 +140,7 @@
           <router-link to="/experience">
             <div
               class="
-                md:w-20
-                md:h-20
+                md:w-20 md:h-20
                 w-14
                 h-14
                 inline-flex
@@ -180,8 +171,7 @@
                   text-lg
                   title-font
                   text-base text-sm
-                  md:
-                  md:font-medium
+                  md: md:font-medium
                   mb-3
                 "
               >
@@ -192,8 +182,7 @@
         </div>
         <div
           class="
-            md:p-4
-            md:w-1/3
+            md:p-4 md:w-1/3
             h-1/4
             flex
             md:flex-col
@@ -205,8 +194,7 @@
           <router-link to="/contact">
             <div
               class="
-                md:w-20
-                md:h-20
+                md:w-20 md:h-20
                 w-14
                 h-14
                 inline-flex
@@ -237,8 +225,7 @@
                   text-lg
                   title-font
                   text-base text-sm
-                  md:
-                  md:font-medium
+                  md: md:font-medium
                   mb-3
                 "
               >
@@ -279,6 +266,10 @@ export default {
 </script>
 
 <style>
+.toggleBtn {
+  height: 31px;
+}
+
 .menu-wrap {
   z-index: 9999;
 }
@@ -287,7 +278,7 @@ export default {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   border-radius: 50px;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .bar1 {
@@ -311,6 +302,7 @@ export default {
 .active .bar1 {
   transform: translateY(5px) rotate(45deg);
   margin: 0;
+  margin-top: 22px;
 }
 
 .active .bar2 {
@@ -344,7 +336,6 @@ export default {
 .active .menu-list {
   height: 84vh;
   opacity: 1;
-  background-color: aquamarine;
   width: 100%;
 }
 
