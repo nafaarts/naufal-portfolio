@@ -8,7 +8,7 @@
           class="h-10 w-10 m-2"
         />
       </a>
-      <div class="flex h-full">
+      <div class="flex h-full z-50">
         <div
           class="
             toggleDark
