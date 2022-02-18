@@ -23,7 +23,7 @@ export default {
   created() {
     setInterval(() => {
       this.isLoading = true;
-    }, 2000);
+    }, 1000);
   },
 };
 </script>
