@@ -11,8 +11,8 @@
       </h4>
       <hr class="border-cream" />
       <p class="dark:text-white text-grey-dark my-5 text-lg">
-        &emsp; Hi! You can call me
-        <strong> Naufal (Naufal Alfadhil) </strong> and I'm Indonesian 🇮🇩 :).
+        &emsp; Hi!
+        <strong> Naufal (Naufal Alfadhil) Here!!</strong>.
         When i was 17 years old, i had the pleasure to turn my passion for
         mobile and web engineering into a job. I believe in learning through
         practical and gained experiences in web development early on my teenage
@@ -62,7 +62,7 @@
   </section>
   <section class="mt-10 md:p-10 container">
     <h1 class="text-cream text-3xl mb-5 md:text-left text-center">
-      TOOLS THAT I USE
+      MY TOOLS
     </h1>
     <hr class="border-cream mb-5" />
     <div class="flex flex-col text-grey-dark dark:text-white">
